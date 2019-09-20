@@ -1,8 +1,44 @@
-# Run Scripts
+# Scripts
 
 Unless stated otherwise, standard header is `Accept application/json` 
 
-## Single Item
+## v1
+
+No endpoint.
+
+## v2
+
+Returns JSON object with all scripts in your tenant.
+
+```http
+/v2/scripts
+```
+
+Returns XML object of a specfic script.
+
+```http
+GET /v2/scripts/{scriptID}
+```
+
+## v3
+
+Returns JSON object with all scripts in your tenant.
+
+```http
+GET /v3/scripts
+```
+
+Returns JSON object of a specfic script.
+
+```http
+GET /v3/scripts/{scriptID}
+```
+
+----
+
+## Running scripts on records
+
+### Single Item
 
 The script must be listed in the workspaces Behaviors section of the Workspace Manager. This is the area where you list On Create, On Edit, and On Demand scripts.
 
@@ -10,7 +46,7 @@ The script must be listed in the workspaces Behaviors section of the Workspace M
 GET /v2/scripts/{scriptID}/workspace/{workspaceID}/item/{itemID}
 ```
 
-## Multiple Items - USE WITH CAUTION
+### Multiple Items - USE WITH CAUTION
 
 Running a script on multiple items makes an API call for each record. Making rapid fire API calls on too many records will probably cause problems. How many is too many? I don't know. But you'll know when Autodesk steps in and asks why you're bombarding the servers with API calls.
 
