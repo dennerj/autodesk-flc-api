@@ -47,7 +47,7 @@ How it works: Postman will make the primary API call. The response gets saved in
 
 ### With a report
 
-This is essentialy the same as above but querying a report returns a diffrent response object.
+This is essentialy the same as above but querying a report returns a diffrent response object. The benifit of this method is the ability to run the script on a defined set of records defined by a report.
 
 #### Primary API Call
 
