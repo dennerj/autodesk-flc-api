@@ -6,7 +6,9 @@ Unless stated otherwise, standard header is `Accept application/json`
 
 The script must be listed in the workspaces Behaviors section of the Workspace Manager. This is the area where you list On Create, On Edit, and On Demand scripts.
 
-`GET v2/scripts/{script ID}/workspace/{workspace ID}/item/{item ID}`
+```http
+GET /v2/scripts/{scriptID}/workspace/{workspaceID}/item/{itemID}
+```
 
 ## Multiple Items - USE WITH CAUTION
 
@@ -21,9 +23,11 @@ The primary API call is a simple v1 workspace item GET. This will give us a seri
 |size|_number_| 10 | Optional. Number of items to return. |
 |filterDeleted| _booleon_| false | Optional |
 
-`GET v1/workspaces/{workspace ID}/items`
+```http
+GET /v1/workspaces/{workspaceID}/items
 
-`GET v1/workspaces/{workspace ID}/items?size=50?filterDeleted=true`
+GET /v1/workspaces/{workspaceID}/items?size=50?filterDeleted=true
+```
 
 Paste this code into the Tests tab in Postman.
 
@@ -47,7 +51,9 @@ This is essentialy the same as above but querying a report returns a diffrent re
 
 #### Primary API Call
 
-```GET /v1/reports/{report ID}```
+```http
+GET /v1/reports/{reportID}
+```
 
 ```js
 var jsonResponse = pm.response.json().reportResult; // Difference: .reportResult
