@@ -14,6 +14,22 @@ GET /v3/users
 |activeOnly|_boolean_|true||
 |mappedOnly|_boolean_|true||
 
+
+## Specific user
+
 ```html
 GET /v3/users/{user ID}
+```
+
+## Outstanding Work
+
+Seems that you are only able to retrieve your own information. Use v1 to get other users information.
+
+```html
+GET /v3/users/@me/outstanding-work
+```
+
+Use v1 to get other user information.
+```html
+GET /v1/users/{user ID}/outstandingwork
 ```
