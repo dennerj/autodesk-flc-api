@@ -50,6 +50,11 @@ GET /v3/workspaces/{workspace ID}/views
 
 ```html
 GET /v3/workspaces/{workspace ID}/tableaus
+```
 
+Seeting the header parameter `Accept` to `application/json/` will return detailed information. Omitting the parameter will
+return basic information. 
+
+```html
 GET /v3/workspaces/{workspace ID}/tableaus/{tableau ID}
 ```
