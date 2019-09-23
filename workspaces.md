@@ -26,8 +26,30 @@ GET /v3/workspaces
 GET /v3/workspaces/{workspace ID}
 ```
 
-### Workspace Fields
+### Fields
 
 ```html
 GET /v3/workspaces/{workspace ID}/fields
+```
+
+## Sections
+
+```html
+GET /v3/workspaces/{workspace ID}/sections
+```
+
+## Tabs
+
+Not really sure the usefulness of this endpoint by its self.
+
+```html
+GET /v3/workspaces/{workspace ID}/views
+```
+
+## Views
+
+```html
+GET /v3/workspaces/{workspace ID}/tableaus
+
+GET /v3/workspaces/{workspace ID}/tableaus/{tableau ID}
 ```
