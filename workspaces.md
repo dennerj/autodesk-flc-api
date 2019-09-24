@@ -40,13 +40,23 @@ GET /v3/workspaces/{workspace ID}/sections
 
 ## Tabs
 
-Not really sure the usefulness of this endpoint by its self.
+Not really sure the usefulness of this endpoint by itself. Gives information about the workspace configuration.
 
 ```html
 GET /v3/workspaces/{workspace ID}/views
+
+GET /v3/workspaces/{workspace ID}/views/{view ID}
+
+GET /v3/workspaces/{workspace ID}/views/{view ID}/fields
+
+GET /v3/workspaces/{workspace ID}/views/{view ID}/fields/{FIELD_NAME}
+
+GET /v3/workspaces/{workspace ID}/views/{view ID}/fields/{FIELD_NAME}/validators
 ```
 
 ## Views
+
+These are the user defined views of the workspace.
 
 ```html
 GET /v3/workspaces/{workspace ID}/tableaus
